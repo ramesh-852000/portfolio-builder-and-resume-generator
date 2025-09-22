@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder - Ramesh R</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">PortfolioBuilder</h1>
+            <button id="themeToggle">🌙</button>
+        </div>
+    </header>
+
+    <main class="container builder">
+        <section class="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="portfolioForm">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="text" id="bio" placeholder="Short Bio" required>
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="phone" placeholder="Phone">
+                <input type="text" id="linkedin" placeholder="LinkedIn URL">
+                <input type="text" id="github" placeholder="GitHub URL">
+
+                <h3>Skills</h3>
+                <div id="skillsContainer"></div>
+                <button type="button" id="addSkill" class="btn-secondary">+ Add Skill</button>
+
+                <h3>Projects</h3>
+                <div id="projectsContainer"></div>
+                <button type="button" id="addProject" class="btn-secondary">+ Add Project</button>
+
+                <button type="submit" class="btn-primary">Update Preview</button>
+            </form>
+
+            <button id="downloadPDF" class="btn-primary">Download PDF</button>
+        </section>
+
+        <section class="preview-section">
+            <h2>Live Preview</h2>
+            <div id="portfolioPreview">
+                <h1 id="previewName">Ramesh R</h1>
+                <p id="previewBio">Web Developer | Tech Enthusiast</p>
+                <p id="previewContact"></p>
+                <h3>Skills</h3>
+                <ul id="previewSkills"></ul>
+                <h3>Projects</h3>
+                <ul id="previewProjects"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

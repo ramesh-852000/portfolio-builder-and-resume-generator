@@ -1,0 +1,174 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #111;
+    transition: 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+#themeToggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+}
+
+/* Builder Layout */
+.builder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.form-section,
+.preview-section {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0.5rem;
+}
+
+.btn-primary {
+    background: #ff6600;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #ddd;
+    color: #111;
+}
+
+.btn-secondary:hover {
+    background: #ccc;
+}
+
+/* Skills & Projects */
+#skillsContainer,
+#projectsContainer {
+    margin-bottom: 0.5rem;
+}
+
+.skill-input,
+.project-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Preview Section */
+#portfolioPreview {
+    padding: 1rem;
+}
+
+#portfolioPreview h1 {
+    font-size: 1.8rem;
+    color: #ff6600;
+}
+
+#portfolioPreview h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#portfolioPreview ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#portfolioPreview ul li {
+    padding: 0.3rem 0;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #18191a;
+    color: #e4e6eb;
+}
+
+body.dark .navbar {
+    background: #242526;
+}
+
+body.dark .form-section,
+body.dark .preview-section {
+    background: #242526;
+    color: #e4e6eb;
+}
+
+body.dark input,
+body.dark .skill-input,
+body.dark .project-input {
+    background: #3a3b3c;
+    color: #e4e6eb;
+    border: 1px solid #555;
+}
+
+body.dark button {
+    color: #fff;
+}
